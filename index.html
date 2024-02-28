@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Tags Generator</title>
+      <meta name="description" content="Generate meta tags for your website to improve SEO and social sharing.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meta Tags Generator</h1>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter title...">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" id="description" placeholder="Enter description...">
+        </div>
+        <div class="form-group">
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" placeholder="Enter image URL...">
+        </div>
+        <div class="form-group">
+            <button onclick="generateMetaTags()">Generate Meta Tags</button>
+            <button onclick="copyMetaTags()" id="copyButton" disabled>Copy to Clipboard</button>
+        </div>
+        <div id="metaTagsResult" class="meta-tags"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
